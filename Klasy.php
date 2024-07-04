@@ -13,4 +13,10 @@ class Konto
     public int $numer;
     public string $typ;
     public float $stan;
+
+    public function wplac($kwota)
+    {
+        $this->stan += $kwota;
+        return $this->stan;
+    }
 }
