@@ -12,8 +12,10 @@ class Konto
 {
     public int $numer;
     public string $typ;
-    public float $stan;
 
+    public function __construct(public float $stan = 0.0)
+    {
+    }
     public function wplac($kwota)
     {
         $this->stan += $kwota;

@@ -6,7 +6,6 @@ $klient = new Klient();
 $konto = new Konto();
 
 $klient->email = 'jan@wp.pl';
-$konto->stan = 184.29;
 
 $konto->wplac(99.99);
 
